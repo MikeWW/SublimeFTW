@@ -1,0 +1,10 @@
+[
+	{
+		"keys": ["ctrl+shift+r"],
+		"command": "apply_find_changes",
+		"args": { "_Mode": "LastFindResult" }
+	},
+	{
+		"keys": ["ctrl+alt+l"], "command": "go_to_found_line"		
+	}
+]
