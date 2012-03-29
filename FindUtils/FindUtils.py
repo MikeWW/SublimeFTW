@@ -33,7 +33,6 @@ def extractLastFindResults(_Input):
 	for Match in RegExp_ML_FindResultsHeader.finditer(_Input):
 		pass
 	if Match == None:
-		print("NoMatch")
 		return None;
 	
 	StartPos = Match.start(0)
@@ -256,7 +255,6 @@ class ApplyFindChangesInFileCommand(sublime_plugin.TextCommand):
 			self.view.add_regions("ApplyFindChanges", lLineRegions, "mark", "bookmark", sublime.HIDDEN);
 		elif _bCloseIfUntouched == True:
 			if self.view.window != None:
-		#		self.view.window().focus_view(self.view)
 				self.view.window().run_command("close_file")
 
 	def replaceLineIfDifferent(self, _Edit, _View, _iLine, _Text):
@@ -265,6 +263,7 @@ class ApplyFindChangesInFileCommand(sublime_plugin.TextCommand):
 		
 		if _View.substr(LineRegion) != _Text:
 			_View.replace(_Edit, LineRegion, _Text)
+			_View.show(LineStart)
 			return LineRegion
 		else:
 			return None
