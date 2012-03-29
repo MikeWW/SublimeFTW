@@ -7,6 +7,9 @@ Comments/requests/suggestions welcome!
 
 I am used to a very different naming convention than the Sublime Test standard (never mind C++ rather than Python) so excuse the schizophrenic naming. Maybe one day I'll tidy it up :-) 
 
+Downloads (see below for info):  
+> FindUtils : https://github.com/downloads/MikeWW/SublimeFTW/FindUtils.sublime-package
+
 -MikeW, 2012  
 mike-at-mikesspace.net
 
@@ -21,8 +24,8 @@ OSX: super+shift+r
 Linux/Win: ctrl+shift+r  
 
 Where <Mode> is one of the following strings:  
-	*	"LastFindResults" (the default)  
-  	*	"CursorFindResult"  
+* "LastFindResults" (the default)  
+* "CursorFindResult"  
 
 This command moves changes you have made in the Find Results pane into the corresponding files. Super useful when refactoring large codebases :-)
 
