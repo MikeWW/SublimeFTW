@@ -19,11 +19,11 @@ mike-at-mikesspace.net
 #### FindUtils:
 !! Currently only properly tested on OSX
 
-##### apply_find_changes <Mode>
+##### apply_find_changes \<Mode\>
 OSX: super+shift+r  
 Linux/Win: ctrl+shift+r  
 
-Where <Mode> is one of the following strings:  
+Where \<Mode\> is one of the following strings:  
 * "LastFindResults" (the default)  
 * "CursorFindResult"  
 
