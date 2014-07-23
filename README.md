@@ -1,3 +1,35 @@
+## Better Sublime
+
+### Manual (in English)
+
+Forked From MikeWW/SublimeFTW, and fix some bugs.
+
+Now it only have one function: 
+
+1. Apply the modify of the find result to the original files.
+
+Usage for the plugin:
+
+After you installed it properly, you can edit your seach result, then you can press the command below to apply the changes to the original files.
+
+OSX: super+shift+r  
+Linux/Win: ctrl+shift+r  
+
+### 中文版说明
+
+目前只有一个功能：
+
+把你在sublime搜索结果中的修改应用到原始文件中。
+
+在你正确安装完该插件，你可以编辑你的搜索结果，然后按下对应快捷键就可以把搜索结果中的修改应用到原始的文件中。
+
+对应快捷建如下：
+
+OSX: super+shift+r  
+Linux/Win: ctrl+shift+r  
+
+----------------------------------Oringinal README below this line--------------------------------
+
 ## SublimeFTW - Misc Sublime Text 2 Packages
 https://github.com/MikeWW/SublimeFTW
 
