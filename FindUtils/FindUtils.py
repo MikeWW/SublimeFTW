@@ -139,7 +139,7 @@ def parseFindChanges(_Input):
     Match = re.match("^Searching [0-9]+ files for \".*\".*$", lFindResults[0])
 
     if Match == None:
-        print "Do not find the header"
+        print("Do not find the header")
         return {}
 
     Mode_LookingForFile = 0;
@@ -170,7 +170,7 @@ def parseFindChanges(_Input):
     # Finish the last files changes.
     if Mode == Mode_ParsingChanges:
         lFilesToChange[CurFileName] = lCurFileChanges;
-    print "find nothing"
+    print("find nothing")
     return lFilesToChange;
 
 
@@ -234,7 +234,7 @@ class ApplyFindChangesCommand(sublime_plugin.WindowCommand):
         self.lOriginalViewIDs = set();
 
     def applyChanges(self, _lFilesToChange, _Window,):
-        for CurFilename, lChanges in _lFilesToChange.iteritems():
+        for CurFilename, lChanges in _lFilesToChange.items():
             lPendingViewChanges[CurFilename] = lChanges;
             CurFileView = _Window.open_file(CurFilename);
             if CurFileView.id() in self.lOriginalViewIDs:
@@ -248,7 +248,7 @@ class ApplyFindChangesInFileCommand(sublime_plugin.TextCommand):
     """
     def run(self, edit, _lChanges, _bCloseIfUntouched):
         lLineRegions = []
-        for ChangeLine, ChangeText in _lChanges.iteritems():
+        for ChangeLine, ChangeText in _lChanges.items():
             LineRegion = self.replaceLineIfDifferent(edit, self.view, int(ChangeLine), ChangeText);
             if LineRegion != None:
                 lLineRegions.append(LineRegion)
